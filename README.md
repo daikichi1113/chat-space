@@ -7,25 +7,25 @@
 |password|string|null: false|
 ### Association
 - has_many :posts
-- has_many :posts_chats
-- has_many :chats,  through:  :posts_chats
+- has_many :users_groups
+- has_many :groups,  through:  :posts_groups
 
-## chatsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 ### Association
 - has_many :posts
-- has_many :posts_chats
-- has_many :users,  through:  :posts_chats
+- has_many :users_groups
+- has_many :users,  through:  :posts_groups
 
-## Users_chatsテーブル
+## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|chats_id|integer|null: false, foreign_key: true|
+|groups_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :chat
+- belongs_to :group
 - belongs_to :user
 
 ## postsテーブル
@@ -34,7 +34,7 @@
 |image|text||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
-|chats_id|integer|null: false, foreign_key: true|
+|groups_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-- belongs_to :chat
+- belongs_to :group
