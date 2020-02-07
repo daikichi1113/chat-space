@@ -5,7 +5,7 @@
         test group
       %ul.main-header__left-box__member-list
         Member:
-    %a{:href => "#"}
+    = link_to "#" do
       .edit-btn Edit
   .messages
     .message
@@ -35,8 +35,8 @@
   .form
     %form.new-message
       .input-box
-        %input.input-text{:placeholder => "type a message", :type => "text"}/
+        %input.input-text{placeholder: "type a message", type: "text"}/
         %label.image{}
           = icon('fas', 'image')
-          %input.image-fail{:type => "file"}
-      %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
+          %input.image-fail{type: "file"}
+      %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
