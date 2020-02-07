@@ -1,1 +1,42 @@
-<チャット画面>
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__group-name
+        test group
+      %ul.main-header__left-box__member-list
+        Member:
+    = link_to "#" do
+      .edit-btn Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__messanger
+          komori
+        %p.message__upper-info__date
+          2020.02.07 14:00:00
+      %p.message__text
+        Hello
+    .message
+      .message__upper-info
+        %p.message__upper-info__messanger
+          komori
+        %p.message__upper-info__date
+          2020.02.07 14:00:00
+      %p.message__text
+        Hello
+    .message
+      .message__upper-info
+        %p.message__upper-info__messanger
+          komori
+        %p.message__upper-info__date
+          2020.02.07 14:00:00
+      %p.message__text
+        Hello
+  .form
+    %form.new-message
+      .input-box
+        %input.input-text{placeholder: "type a message", type: "text"}/
+        %label.image{}
+          = icon('fas', 'image')
+          %input.image-fail{type: "file"}
+      %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
