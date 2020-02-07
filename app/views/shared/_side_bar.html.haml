@@ -1,1 +1,23 @@
-<サイドバー>
+.side-ber
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name
+        komo
+      %ul.side-header__box__menu
+        %li.side-header__box__chat-icon
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.side-header__box__user-icon
+          = link_to "#" do
+            = icon('fas','cog')
+
+  .groups
+    .group
+      .group__group-name test
+      .group__new-message test
+    .group
+      .group__group-name test
+      .group__new-message test
+    .group
+      .group__group-name test
+      .group__new-message test
