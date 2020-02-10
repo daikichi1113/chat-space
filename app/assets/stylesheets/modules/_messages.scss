@@ -41,7 +41,7 @@
       }
     }
 
-    .groups {
+    .groups-list {
       background-color: #2f3e51;
       height: calc(100% - 100px);
       .group {
@@ -55,6 +55,10 @@
           font-size: 11px;
           color: $white;
           margin-bottom: 40px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
         }
       }
     }
