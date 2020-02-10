@@ -7,7 +7,7 @@
 
   .side-ber {
     background-color: #253141;
-    color: $mainWhite;
+    color: $white;
     width: 300px;
     height: 100vh;
 
@@ -35,7 +35,7 @@
             padding-left: 5px;
           }
           a {
-          color: $mainWhite;
+          color: $white;
           }
         }
       }
@@ -48,12 +48,12 @@
         padding: 20px;
         &__group-name {
           font-size: 15px;
-          color: $mainWhite;
+          color: $white;
           margin-bottom: 5px;
         }
         &__new-message {
           font-size: 11px;
-          color: $mainWhite;
+          color: $white;
           margin-bottom: 40px;
         }
       }
@@ -61,7 +61,7 @@
   }
 
   .chat-main {  
-    background-color: $mainWhite;
+    background-color: $white;
     width: calc(100% - 300px);
     height: 100vh;
 
@@ -74,7 +74,7 @@
       &__left-box {
         padding-top: 35px;
         &__group-name {
-          color: $mainBlack;
+          color: $black;
           font-size: 20px;
           margin-bottom: 15px;
         }
@@ -85,14 +85,14 @@
       }
       a {
         text-decoration: none;
-        color: $btnBlue;
+        color: $light_blue;
         .edit-btn {
           font-size: 16px;
           height: 40px;
           line-height: 40px;
           padding: 0 20px;
           margin-top: 28px;
-          border: solid 1px $btnBlue;
+          border: solid 1px $light_blue;
         }
       }
     }
@@ -107,7 +107,7 @@
           margin-bottom: 12px;
           display: flex;
           &__messenger {
-            color: $mainBlack;
+            color: $black;
             font-size: 16px;
             font-weight: bold;
           }
@@ -159,9 +159,9 @@
         height: 50px;
         padding: 0 30px;
         margin-left: 15px;
-        background-color: $btnBlue;
+        background-color: $light_blue;
         font-size: 16px;
-        color: $mainWhite;
+        color: $white;
       }
     }
   }
