@@ -85,6 +85,10 @@
         &__member-list {
           color: #999999;
           font-size: 12px;
+          display: flex;
+        }
+        li {
+          padding-left: 10px;
         }
       }
       a {
@@ -129,11 +133,11 @@
       }
     }
 
-    .form{
+    .form {
       background-color: #d2d2d2;
       height: 90px;
       padding: 20px 40px;
-      .new-message {
+      form {
         display: flex;
       }
       .input-box {
@@ -153,7 +157,7 @@
           right: 10px;
           top: 10px;
           font-size: 30px;
-          .image-fail {
+          .image-file {
             display: none;
           }
         }
